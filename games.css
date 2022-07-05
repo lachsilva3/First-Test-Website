@@ -1,0 +1,435 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.75)),url(spider-min.jpg);
+  background-size:cover;
+  background-position: center;
+  position: fixed;
+}
+.logo{
+  color: white;
+  position: absolute;
+  top: 20px;
+  left:0px;
+  margin-left: 20px;
+}
+/* BOX CONTENT */
+.box {
+  width: 93%;
+  height: 60%;
+  position: relative;
+  top:15%;
+  margin: 0 auto;
+  padding: 3rem;
+  border: 10px solid ;
+  border-radius: 20px;
+  box-shadow:0 20px 50px rgba(0, 0, 0, 0.60);
+  animation: color-change 2s infinite;
+  border-left: none;
+  border-right: none;
+}
+@keyframes color-change{
+  0%,
+  100%{
+    color: #fa4454;
+  }
+  25%{
+    color: gold;
+  }
+  50%{
+    color: lime;
+  }
+  50%{
+    color: magenta;
+  }
+  50%{
+    color: red;
+  }
+  50%{
+    color:blue;
+  }
+}
+.cont{
+  list-style-type: none;
+  text-align: center;
+}
+/* VALORANT SPAN */
+.Vbutton{
+  text-shadow:
+  0 0 5px rgb(255, 255, 255),
+  0 0 10px rgb(204, 52, 82),
+  0 0 20px rgb(215, 72, 108),
+  0 0 40px rgb(223, 63, 105),
+  0 0 80px rgb(154, 6, 36),
+  0 0 90px rgb(150, 24, 58),
+  0 0 100px rgb(188, 12, 50),
+  0 0 150px rgb(229, 49, 76);
+  width:250px;
+  color:#0f1923;
+  top:10%;
+  left: 20%;
+  padding: 20px ;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  font-size: xx-large;
+  border-color:#943a41;
+  border-width: 5px;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+}
+span1{
+  background:#fa4454 ;
+  height:100%;
+  width:0;
+  position: absolute;
+  top:0;
+  left:-20px;
+  transform: skewX(27deg);
+  z-index: -1;
+  transition: 0.15s;
+}
+.Vbutton:hover span1{
+  width: 120%;
+  border:none;
+}
+/* PUBG SPAN */
+.Pbutton{
+  width:250px;
+  color: #0f1923;
+  text-shadow:
+  0 0 5px rgb(255, 255, 255),
+  0 0 10px rgb(252, 227, 36),
+  0 0 20px rgb(151, 156, 34),
+  0 0 40px rgb(239, 205, 39),
+  0 0 80px rgb(176, 155, 16),
+  0 0 90px rgb(245, 248, 45),
+  0 0 100px rgb(110, 109, 9),
+  0 0 150px rgb(238, 187, 5);
+  top:40%;
+  right:14.8%;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  font-size: xx-large;
+  border-color:rgb(195, 148, 29);
+  border-width: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
+  border-radius:10px;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+}
+span2{
+  background:gold;
+  height: 100%;
+  width:0; 
+  position: absolute;
+  top:0;
+  left:-20px;
+  transform: skewX(27deg);
+  z-index: -1;
+  transition: 0.15s;
+}
+.Pbutton:hover span2{
+  width: 120%;
+  border:none;
+}
+/* GTA V SPAN */
+.Gbutton{
+  color: #0f1923;
+  text-shadow:
+  0 0 5px rgb(255, 255, 255),
+  0 0 10px rgb(169, 252, 36),
+  0 0 20px rgb(56, 114, 8),
+  0 0 40px rgb(59, 169, 12),
+  0 0 80px rgb(156, 246, 52),
+  0 0 90px rgb(35, 87, 6),
+  0 0 100px rgb(26, 185, 5),
+  0 0 150px rgb(61, 121, 6);
+  width:250px;
+  top: 70%;
+  left:20%;
+  padding: 20px;
+  text-align: center; 
+  font-weight: bold;
+  background: transparent;
+  font-size: xx-large;
+  border-color:green;
+  border-width: 5px ;
+  border-radius: 10px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+}
+span3{
+  background:lime ;
+  height: 100%;
+  width:0; 
+  position: absolute;
+  top:0;
+  left:-20px;
+  transform: skewX(27deg);
+  z-index: -1;
+  transition: 0.15s;
+}
+.Gbutton:hover span3{
+  width: 120%;
+  border:none;
+}
+/*valorant*/
+.valovid{
+  position: absolute;
+  top:37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fa4454;
+  border-radius: 5px;
+}
+.vlink{
+  text-decoration: none;
+  color: #fa4454;
+  border:1px solid #fa4454;
+}
+.popup {
+  top:4.5%;
+  margin: 70px auto;
+  padding: 20px;
+  background:rgb(44, 42, 42);
+  border-radius:5px;
+  border: 5px solid #fa4454;
+  width: 70%;
+  height:70%;
+  position: relative;
+  transition: 0.5s;
+}
+.popup .content {
+  top:50%;
+  position: relative;
+  color: aliceblue;
+  max-height: 40%;
+  overflow: auto;
+  font-size: large;
+}
+.popup h2 {
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 0;
+  color: #fa4454;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fa4454;
+}
+.popup .close:hover {
+  color:red;
+}
+/*pubg*/
+.pubg{
+  font-size: xxx-large;
+  position: relative;
+  top:20%;
+  padding: 10px;
+  color: gold;
+  border: 5px solid gold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pubpop{
+  height: auto;
+  top:4.5%;
+  margin: 70px auto;
+  padding: 20px;
+  background:rgb(44, 42, 42);
+  border-radius: 5px;
+  border: 5px solid gold;
+  width: 70%;
+  height:70%;
+  position: relative;
+  transition:0.5s;
+  
+}
+.pubpop h2 {
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 0;
+  color: gold;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.pubpop .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: gold;
+}
+.pubpop .close:hover {
+  color:red;
+}
+.pubpop .content {
+  position: relative;
+  top:50%;
+  font-size: large;
+  color: white;
+  max-height: 40%;
+  overflow: auto;
+}
+
+.pubvid{
+  position: absolute;
+  top:37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid gold;
+  border-radius: 5px;
+}
+.plink{
+  text-decoration: none;
+  color: gold;
+  border:1px solid gold;
+}
+/*GTA*/
+.gta{
+  font-size: xxx-large;
+  position: relative;
+  top:40%;
+  padding: 10px;
+  color: lime;
+  border: 5px solid lime;
+  text-decoration: none;
+  cursor: pointer;
+  transition:0.3s;
+}
+.gtavid{
+  position: absolute;
+  top:37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid lime;
+  border-radius: 5px;
+}
+.glink{
+  color: lime;
+  text-decoration: none;
+  border:1px solid lime;
+}
+.gtapop{
+  top:4.5%;
+  margin: 70px auto;
+  padding: 20px;
+  background:rgb(44, 42, 42);
+  border-radius: 5px;
+  border: 5px solid lime;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  transition:0.5s;
+}
+.gtapop h2{
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 0;
+  color: lime;
+}
+.gtapop .close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: lime;
+}
+.gtapop .close:hover{
+  color:red;
+}
+.gtapop .content{
+  position: relative;
+  top:50%;
+  font-size: large;
+  color:aliceblue;
+  max-height:40%;
+  overflow: auto;
+}
+
+/*OVERLAY FOR ALL 3 GAMES*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 80%;
+  }
+  .pubpop{
+    width:80%;
+  }
+  .gtapop{
+    width:80%;
+  }
+}
+
+.navbar {
+  position:absolute;
+  top: 20px;
+  right: 20px; 
+  font-size: 20px; 
+}
+.navbar   li {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+.navbar   li  a{
+  text-decoration:none ;
+  color: aliceblue;
+}
+  .navbar   li::after{
+  content:'';
+  height: 3px;
+  width: 0%;
+  background: red;
+  position: absolute;
+  left:0;
+  bottom: -3px;
+  transition: 0.15s;
+}
+.navbar  li:hover::after{
+  width:100%;
+}

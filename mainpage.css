@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,0.95)),url(test-min.jpg);
+  background-size:cover;
+  background-position: center;
+  position: fixed;
+}
+.logo{
+  color: aliceblue;
+  position: absolute;
+  top: 20px;
+  left:0px;
+  margin-left: 20px;
+}
+.col{
+  color:cyan;
+  font-size: xx-large;
+}
+.navbar {
+  position:absolute;
+  top: 20px;
+  right: 20px;  
+  font-size: 20px;
+}
+.navbar   li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+  }
+.navbar  li  a{
+  text-decoration:none ;
+  color: aliceblue;
+}
+.navbar  li::after{
+  content:'';
+  height: 3px;
+  width: 0%;
+  background: cyan;
+  position: absolute;
+  left:0;
+  bottom: -3px;
+  transition: 0.15s;
+}
+.navbar  li:hover::after{
+  width:100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: aliceblue;
+  font-size: large;
+}
+button{
+  color: white;
+  width:250px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 10px; 
+  font-weight: bold;
+  background: transparent;
+  font-size: 18;
+  border-color: cyan;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span{
+  background:rgb(177, 7, 7) ;
+  height: 100%;
+  width:0; 
+  position: absolute;
+  top:0;
+  left:-20px;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: 0.15s;
+}
+button:hover span{
+  width: 120%;
+  border:none;
+}
+/*TEST*/
+.text{
+  color: cyan;
+  position: relative;
+  margin-top: 200px;
+  text-align: center;
+  top:65%; 
+}
