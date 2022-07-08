@@ -19,7 +19,7 @@
   margin-left: 20px;
 }
 .col{
-  color:cyan;
+  color:rgb(218, 8, 8);
   font-size: xx-large;
 }
 .navbar {
@@ -65,11 +65,12 @@ button{
   width:250px;
   padding: 10px;
   text-align: center;
-  margin: 10px 10px; 
+  margin: 30px 30px; 
   font-weight: bold;
   background: transparent;
   font-size: 18;
-  border-color: cyan;
+  border: 4px solid cyan;
+  border-radius: 5px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
