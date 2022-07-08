@@ -72,7 +72,7 @@
   width:250px;
   color:#0f1923;
   top:10%;
-  left: 20%;
+  right: 14.8%;
   padding: 20px ;
   text-align: center;
   font-weight: bold;
@@ -114,8 +114,8 @@ span1{
   0 0 90px rgb(245, 248, 45),
   0 0 100px rgb(110, 109, 9),
   0 0 150px rgb(238, 187, 5);
-  top:40%;
-  right:14.8%;
+  top:30%;
+  left:20%;
   padding: 20px;
   text-align: center;
   font-weight: bold;
@@ -187,6 +187,49 @@ span3{
   width: 120%;
   border:none;
 }
+/* Fortnite SPAN */
+.Fbutton{
+  color: #0f1923;
+  text-shadow:
+  0 0 5px rgb(255, 255, 255),
+  0 0 10px rgb(38, 59, 198),
+  0 0 20px rgb(24, 242, 238),
+  0 0 40px rgb(9, 125, 116),
+  0 0 80px rgb(10, 82, 126),
+  0 0 90px rgb(17, 217, 244),
+  0 0 100px rgb(38, 216, 248),
+  0 0 150px rgb(10, 38, 116);
+  width:250px;
+  top: 50%;
+  right:14.8%;
+  padding: 20px;
+  text-align: center; 
+  font-weight: bold;
+  background: transparent;
+  font-size: xx-large;
+  border-color:cyan;
+  border-width: 5px ;
+  border-radius: 10px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+}
+span4{
+  background:cyan ;
+  height: 100%;
+  width:0; 
+  position: absolute;
+  top:0;
+  left:-20px;
+  transform: skewX(27deg);
+  z-index: -1;
+  transition: 0.15s;
+}
+.Fbutton:hover span4{
+  width: 120%;
+  border:none;
+}
 /*valorant*/
 .valovid{
   position: absolute;
@@ -241,17 +284,6 @@ span3{
   color:red;
 }
 /*pubg*/
-.pubg{
-  font-size: xxx-large;
-  position: relative;
-  top:20%;
-  padding: 10px;
-  color: gold;
-  border: 5px solid gold;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
 .pubpop{
   height: auto;
   top:4.5%;
@@ -309,17 +341,6 @@ span3{
   border:1px solid gold;
 }
 /*GTA*/
-.gta{
-  font-size: xxx-large;
-  position: relative;
-  top:40%;
-  padding: 10px;
-  color: lime;
-  border: 5px solid lime;
-  text-decoration: none;
-  cursor: pointer;
-  transition:0.3s;
-}
 .gtavid{
   position: absolute;
   top:37%;
@@ -372,6 +393,60 @@ span3{
   max-height:40%;
   overflow: auto;
 }
+/* Fortnite */
+
+.fvid{
+  position: absolute;
+  top:37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid cyan;
+  border-radius: 5px;
+}
+.flink{
+  color: cyan;
+  text-decoration: none;
+  border:1px solid cyan;
+}
+.fpop{
+  top:4.5%;
+  margin: 70px auto;
+  padding: 20px;
+  background:rgb(44, 42, 42);
+  border-radius: 5px;
+  border: 5px solid cyan;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  transition:0.5s;
+}
+.fpop h2{
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 0;
+  color: cyan;
+}
+.fpop .close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: cyan;
+}
+.fpop .close:hover{
+  color:red;
+}
+.fpop .content{
+  position: relative;
+  top:50%;
+  font-size: large;
+  color:aliceblue;
+  max-height:40%;
+  overflow: auto;
+}
 
 /*OVERLAY FOR ALL 3 GAMES*/
 .overlay {
@@ -401,6 +476,9 @@ span3{
     width:80%;
   }
   .gtapop{
+    width:80%;
+  }
+  .fpop{
     width:80%;
   }
 }
