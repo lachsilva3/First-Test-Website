@@ -50,7 +50,7 @@
     width:100%;
   }
 .container{
-  width: 70%;
+  width: 50%;
   height: 50%;
   position: relative;
   top:15%;
@@ -66,13 +66,12 @@
   border-radius: 20px;
 }
 .content{
-  top:45%;
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position:absolute;
   color: aliceblue;
   font-size: larger;
-  text-align: center;
 }
 .site{
   color: red;
