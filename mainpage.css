@@ -6,11 +6,12 @@
 .banner{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,0.95)),url(images/test-min.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,0.95)),url(images/wolf\ howling.jpg);
   background-size:cover;
   background-position: center;
   position: fixed;
 }
+
 .logo{
   color: aliceblue;
   position: absolute;
